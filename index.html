@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>birthday-detector</title>
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="container-wrapper">
+      <h3 class="text-center text-secondary mt-5">Birthday Detector</h3>
+      <p class="text-center text-dark p-5">
+        Let's have some fun, want to know what day of the week you were born
+        which results to your
+        <a
+          href="https://en.wikipedia.org/wiki/Akan_names" target="_blank"
+          ><span>Akan</span></a
+        >
+        name as well?
+      </p>
+      <p class="text-center text-dark p-6">
+        Click the find out button below once inputting your birthday date.
+      </p>
+      <div class="container">
+        <form action="/" method="GET">
+            <div>
+                <label for="birthdate">Birth date:</label>
+                <input id="birthdate" name="birthdate" type="date">
+            </div>
+            <div class="gender">
+                <div><p>Gender:</p></div>
+                <div>
+                    <label for="male">Male</label> 
+                    <input type="radio" id="male" name="male" value="Male">
+                    <label for="female">Female</label> 
+                    <input type="radio" id="female" name="female" value="Female">
+                 </div>
+            </div>
+        </form>
+        <button class="btn btn-outline-dark" type="submit">Find Out</button>
+      </div>
+    </div>
+  </body>
+</html>
