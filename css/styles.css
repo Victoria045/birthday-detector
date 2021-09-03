@@ -2,8 +2,8 @@ body {
   background-color: #f1f1f1;
 }
 .container {
-  border: solid 1px #000000;
-  border-radius: 5px;
+  border: solid 4px #000000;
+  border-radius: 10px;
   margin: auto;
   margin-top: 100px;
   width: 600px;
@@ -34,6 +34,6 @@ form {
 }
 
 button {
-  outline: none;
+  
   margin: 0px 40px;
 }
