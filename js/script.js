@@ -1,4 +1,5 @@
-var CC, YY, MM, DD, d, dayValue;
+//Initializing variables
+var CC, YY, MM, DD, d, dayOfWeek;
 var weekdays = ["Sunday","Monday","Tuesday","Wednesday", "Thursday", "Friday","Saturday" ];
 var akanMaleNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw", "Kofi","Kwame"];
 var akanFemaleNames = ["Akosua","Adwoa","Abenaa","Akua"," Yaa","Afua","Ama"];
@@ -56,56 +57,57 @@ function getGender(){
   }
   switch(gender){
     case "male":
-      if (dayValue == 1){
+      if (dayOfWeek == 1){
         alert(`You were born on ${weekdays[0]}. And your Akan name is ${akanMaleNames[0]}!`);
       }
-      else if(dayValue == 2){
+      else if(dayOfWeek == 2){
         alert(`You were born on ${weekdays[1]}. And your Akan name is ${akanMaleNames[1]}!`);
       }
-      else if(dayValue == 3){
+      else if(dayOfWeek == 3){
         alert(`You were born on ${weekdays[2]}. And your Akan name is ${akanMaleNames[2]}!`);
       }
-      else if(dayValue == 4){
+      else if(dayOfWeek == 4){
         alert(`You were born on ${weekdays[3]}. And your Akan name is ${akanMaleNames[3]}!`);
       }
-      else if(dayValue == 5){
+      else if(dayOfWeek == 5){
         alert(`You were born on ${weekdays[4]}. And your Akan name is ${akanMaleNames[4]}!`);
       }
-      else if(dayValue == 6){
+      else if(dayOfWeek == 6){
         alert(`You were born on ${weekdays[5]}. And your Akan name is ${akanMaleNames[5]}!`);
       }
-      else if(dayValue == -0){
+      else if(dayOfWeek == -0){
         alert(`You were born on ${weekdays[6]}. And your Akan name is ${akanMaleNames[6]}!`);
       }
     break;
     case "female":
-      if (dayValue == 1){
+      if (dayOfWeek == 1){
         alert(`You were born on ${weekdays[0]}. And your Akan name is ${akanFemaleNames[0]}!`);
       }
-      else if(dayValue == 2){
+      else if(dayOfWeek == 2){
         alert(`You were born on ${weekdays[1]}. And your Akan name is ${akanFemaleNames[1]}!`);
       }
-      else if(dayValue == 3){
+      else if(dayOfWeek == 3){
         alert(`You were born on ${weekdays[2]}. And your Akan name is ${akanFemaleNames[2]}!`);
       }
-      else if(dayValue == 4){
+      else if(dayOfWeek == 4){
         alert(`You were born on ${weekdays[3]}. And your Akan name is ${akanFemaleNames[3]}!`);
       }
-      else if(dayValue == 5){
+      else if(dayOfWeek == 5){
         alert(`You were born on ${weekdays[4]}. And your Akan name is ${akanFemaleNames[4]}!`);
       }
-      else if(dayValue == 6){
+      else if(dayOfWeek == 6){
         alert(`You were born on ${weekdays[5]}. And your Akan name is ${akanFemaleNames[5]}!`);
-      }else if(dayValue == -0){
+      }else if(dayOfWeek == -0){
         alert(`You were born on ${weekdays[6]}. And your Akan name is ${akanFemaleNames[6]}!`);
       }
     break
     default:
     }
 }
+
 function findOut() {
   validate();
-  dayValue = weekdayValue();
+  dayOfWeek = weekdayValue();
   getGender();
   form.reset();
 }
