@@ -1,5 +1,5 @@
 body {
-  background-color: #FCF9F9;
+  background-color: #FCEFEF;
 }
 .container {
   border-radius: 10px;
@@ -11,7 +11,7 @@ body {
 
 span {
   color: blue;
-  font-size: larger;
+  font-weight: bolder;
 }
 
 a {
