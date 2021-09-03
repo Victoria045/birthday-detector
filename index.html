@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <title>birthday-detector</title>
-    <script src="js/script.js"></script>
   </head>
 
   <body>
@@ -25,23 +24,58 @@
         Click the find out button below once inputting your birthday date.
       </p>
       <div class="container">
-        <form action="/" method="GET">
+        <form name="form" class="myForm" onsubmit="validate()">
           <div>
-            <label for="birthdate">Birth date:</label>
-            <input id="birthdate" name="birthdate" type="text" />
+            <label for="number">Year of Birth:</label>
+            <input
+              type="number"
+              class="form-control"
+              id="year"
+              name="year"
+              placeholder="Year of Birth"
+            />
+          </div>
+          <div>
+            <label for="number">Month of Birth:</label>
+            <input
+              type="number"
+              class="form-control"
+              id="month"
+              name="month"
+              placeholder="Month of Birth"
+            />
+          </div>
+          <div>
+            <label for="date">Date of Birth:</label>
+            <input
+              type="number"
+              class="form-control"
+              id="date"
+              name="date"
+              placeholder="Date of Birth eg 05 for May"
+            />
           </div>
           <div class="gender">
             <div><p>Gender:</p></div>
             <div>
               <label for="male">Male</label>
-              <input type="radio" id="male" name="gender" value="Male" />
+              <input type="radio" id="male" name="gender" value="male" />
               <label for="female">Female</label>
-              <input type="radio" id="female" name="gender" value="Female" />
+              <input type="radio" id="female" name="gender" value="female" />
             </div>
           </div>
         </form>
-        <button class="btn btn-outline-dark" type="submit" id="submit">Find Out</button>
+        <button
+          class="btn btn-outline-dark"
+          type="submit"
+          id="submit"
+          onclick="findOut();"
+        >
+          Find Out
+        </button>
       </div>
     </div>
+  
+    <script src="js/script.js"></script>
   </body>
 </html>
