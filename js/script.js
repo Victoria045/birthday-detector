@@ -4,7 +4,7 @@ var weekdays = ["Sunday","Monday","Tuesday","Wednesday", "Thursday", "Friday","S
 var akanMaleNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw", "Kofi","Kwame"];
 var akanFemaleNames = ["Akosua","Adwoa","Abenaa","Akua"," Yaa","Afua","Ama"];
 
-//function to raise alert messages on invalid input submission
+//function to raise alert messages returning false on invalid input submission 
 function validate() {
   var genders = document.getElementsByName("gender");
   if( document.form.year.value == "" || document.form.year.value.length !=4 || document.form.year.value <= 1900 || document.form.year.value > 2100) {
