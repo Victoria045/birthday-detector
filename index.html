@@ -21,10 +21,16 @@
         >
         name as well?
       </p>
+      <!-- <p>Well, this application takes your birth date and calculates day 
+        of the week you were born and depending on the gender selected
+        outputs your Akan name.
+        Akan names  
+      </p> -->
       <p class="text-center text-dark p-6">
         Click the find out button below once inputting your birthday date.
       </p>
       <div class="container border border-primary border-2">
+        <div class="form-errors"></div>
         <form name="form" class="myForm" onsubmit="validate()">
           <div class="mb-3">
             <label for="number">Year of Birth:</label>
@@ -75,6 +81,11 @@
           Find Out
         </button>
       </div>
+    </div>
+    <div class="description-wrapper">
+      <div class="description"></div>
+      <div class="description"></div>
+      <div class="description"></div>
     </div>
   
     <script src="js/script.js"></script>
