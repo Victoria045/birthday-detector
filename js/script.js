@@ -1,24 +1,24 @@
 //Initializing variables
 var CC, YY, MM, DD, d, dayOfWeek;
-var weekdays = ["Sunday","Monday","Tuesday","Wednesday", "Thursday", "Friday","Saturday" ];
+var weekdays = ["Sunday","Monday","Tuesday","Wednesday", "Thursday", "Friday","Saturday"];
 var akanMaleNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw", "Kofi","Kwame"];
 var akanFemaleNames = ["Akosua","Adwoa","Abenaa","Akua"," Yaa","Afua","Ama"];
 
-//function to raise alert messages on invalid submission
+//function to raise alert messages on invalid input submission
 function validate() {
   var genders = document.getElementsByName("gender");
   if( document.form.year.value == "" || document.form.year.value.length !=4 || document.form.year.value <= 1900 || document.form.year.value > 2100) {
-     alert(`Please provide a valid year of birth! eg 1990`);
+     alert(`Please enter a valid year of birth! eg 1990`);
      document.form.year.focus() ;
      return false;
   }
   else if( document.form.month.value == "" || document.form.month.value.length != 2 || document.form.month.value <= 0 || document.form.month.value > 12){
-     alert(`Please provide your month of birth! between 1 and 12`);
+     alert(`Please enter your month of birth! between 1 and 12`);
      document.form.month.focus() ;
      return false;
   }
   else if( document.form.date.value == "" || document.form.month.value.length != 2|| document.form.date.value <= 0 || document.form.date.value > 31) {
-     alert(`Please provide a valid date that you were born in!`);
+     alert(`Please enter a valid date that you were born in!`);
      document.form.day.focus() ;
      return false;
   }
@@ -31,8 +31,9 @@ function validate() {
   } 
 }
 
-//function returns day of the week the user was born
-function weekdayValue(){
+/* function splits the three inputs given by the user into CC, YY, MM, DD 
+and returns day of the week the user was born */
+function weekdayValue() {
   year = document.getElementById("year").value;
   CC = parseInt(year.substring(0,2));
   YY = parseInt(year.substring(2,4));
@@ -43,8 +44,8 @@ function weekdayValue(){
   return (d.toFixed());
 }
 
-// function that returns gender male/female in regard to the option checked
-function getGender(){
+// function that returns either male/female in regard to the gnder option checked
+function getGender() {
   var genders = document.getElementsByName("gender");
   if(genders[0].checked == true){
     var gender = "male";
@@ -75,7 +76,7 @@ function getGender(){
       else if(dayOfWeek == 6){
         alert(`You were born on ${weekdays[5]}. And your Akan name is ${akanMaleNames[5]}!`);
       }
-      else if(dayOfWeek == -0){
+      else if(dayOfWeek == 7){
         alert(`You were born on ${weekdays[6]}. And your Akan name is ${akanMaleNames[6]}!`);
       }
     break;
@@ -97,7 +98,7 @@ function getGender(){
       }
       else if(dayOfWeek == 6){
         alert(`You were born on ${weekdays[5]}. And your Akan name is ${akanFemaleNames[5]}!`);
-      }else if(dayOfWeek == -0){
+      }else if(dayOfWeek == 7){
         alert(`You were born on ${weekdays[6]}. And your Akan name is ${akanFemaleNames[6]}!`);
       }
     break
