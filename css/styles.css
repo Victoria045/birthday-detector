@@ -40,3 +40,8 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
+.last-description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
