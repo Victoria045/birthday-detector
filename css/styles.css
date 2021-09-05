@@ -40,6 +40,19 @@ button {
   border-radius: 5px;
 }
 
+footer {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  color: #000000;
+  background-color: #578AFF ;
+  margin-top: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #000000;
+}
 /* @media only screen and (max-width: 1300px) {
   .description-wrapper {
     display: grid;
