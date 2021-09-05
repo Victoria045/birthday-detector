@@ -5,7 +5,7 @@
 
 ## Description
 This is a web application that allows a user to input their birth date details in a form 
-and upon submitting calculates the day of the week they were born and depending on their gender outputs 
+and upon submitting, calculates the day of the week they were born and depending on their gender outputs 
 their Akan names.
 
 ## Setup/Installation Requirements
