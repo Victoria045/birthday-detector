@@ -44,7 +44,7 @@ function weekdayValue() {
   return (d.toFixed());
 }
 
-// function that returns either male/female in regard to the gnder option checked
+// function that returns either male/female in regard to the gender option checked
 function getGender() {
   var genders = document.getElementsByName("gender");
   if(genders[0].checked == true){
