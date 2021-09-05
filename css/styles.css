@@ -11,16 +11,7 @@ body {
 
 span {
   color: blue;
-  font-weight: bolder;
 }
-
-a {
-  text-decoration: none;
-}
-
-/* a:hover {
-  color: red;
-} */
 
 form {
   margin: 50px 40px 20px;
