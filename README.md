@@ -9,7 +9,7 @@ and upon submitting, calculates the day of the week they were born and depending
 their Akan names.
 
 ## Setup/Installation Requirements
-* Install you preferred browser
+* Install your preferred browser
 
 * Load the website url on your browser
 
@@ -42,7 +42,7 @@ The program compares the inputs entered with the conditions set for the inputs e
 * 0 < Date >= 31, Date falls between 0-31 else false.
 * 0 < Month >= 12, Month falls between 0-12 else false.
 * Gender Male or Female, cannot be empty. <br/>  
-The True value is outputted. Example: **You were born on Tuesday. And Your Akan name is Kwabena!** If gender is Male.<br/>
+The True value is outputted. Example: **You were born on Tuesday. And Your Akan name is Kwabena!** If gender is Male.<br/><br/>
 The True value is outputted. Example: **You were born on Tuesday and Your akan name is  Abenaa!** If gender is female.  
 
 **Example**
@@ -50,7 +50,7 @@ The True value is outputted. Example: **You were born on Tuesday and Your akan n
 * year input - 90
 * month input - 08
 * date input - 20
-* gender - female selected,
+* gender - female selected.
 **Expected output: *You were born on Tuesday. And Your Akan name is Abenaa!*** 
 
 ## Known Bugs
