@@ -57,49 +57,12 @@ function getGender() {
   }
   switch(gender){
     case "male":
-      if (dayOfWeek == 1){
-        alert(`You were born on ${weekdays[0]}. And your Akan name is ${akanMaleNames[0]}!`);
-      }
-      else if(dayOfWeek == 2){
-        alert(`You were born on ${weekdays[1]}. And your Akan name is ${akanMaleNames[1]}!`);
-      }
-      else if(dayOfWeek == 3){
-        alert(`You were born on ${weekdays[2]}. And your Akan name is ${akanMaleNames[2]}!`);
-      }
-      else if(dayOfWeek == 4){
-        alert(`You were born on ${weekdays[3]}. And your Akan name is ${akanMaleNames[3]}!`);
-      }
-      else if(dayOfWeek == 5){
-        alert(`You were born on ${weekdays[4]}. And your Akan name is ${akanMaleNames[4]}!`);
-      }
-      else if(dayOfWeek == 6){
-        alert(`You were born on ${weekdays[5]}. And your Akan name is ${akanMaleNames[5]}!`);
-      }
-      else if(dayOfWeek == 7){
-        alert(`You were born on ${weekdays[6]}. And your Akan name is ${akanMaleNames[6]}!`);
-      }
+        alert(`You were born on ${weekdays[dayOfWeek]}. And your Akan name is ${akanMaleNames[dayOfWeek]}!`);
+      
     break;
     case "female":
-      if (dayOfWeek == 1){
-        alert(`You were born on ${weekdays[0]}. And your Akan name is ${akanFemaleNames[0]}!`);
-      }
-      else if(dayOfWeek == 2){
-        alert(`You were born on ${weekdays[1]}. And your Akan name is ${akanFemaleNames[1]}!`);
-      }
-      else if(dayOfWeek == 3){
-        alert(`You were born on ${weekdays[2]}. And your Akan name is ${akanFemaleNames[2]}!`);
-      }
-      else if(dayOfWeek == 4){
-        alert(`You were born on ${weekdays[3]}. And your Akan name is ${akanFemaleNames[3]}!`);
-      }
-      else if(dayOfWeek == 5){
-        alert(`You were born on ${weekdays[4]}. And your Akan name is ${akanFemaleNames[4]}!`);
-      }
-      else if(dayOfWeek == 6){
-        alert(`You were born on ${weekdays[5]}. And your Akan name is ${akanFemaleNames[5]}!`);
-      }else if(dayOfWeek == 7){
-        alert(`You were born on ${weekdays[6]}. And your Akan name is ${akanFemaleNames[6]}!`);
-      }
+        alert(`You were born on ${weekdays[dayOfWeek]}. And your Akan name is ${akanFemaleNames[dayOfWeek]}!`);
+     
     break
     default:
     }
