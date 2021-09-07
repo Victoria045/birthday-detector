@@ -12,12 +12,12 @@ function validate() {
      document.form.year.focus() ;
      return false;
   }
-  else if( document.form.month.value == "" || document.form.month.value.length != 2 || document.form.month.value <= 0 || document.form.month.value > 12){
+  else if( document.form.month.value == "" || document.form.month.value <= 0 || document.form.month.value > 12){
      alert(`Please enter your month of birth! between 1 and 12`);
      document.form.month.focus() ;
      return false;
   }
-  else if( document.form.date.value == "" || document.form.month.value.length != 2|| document.form.date.value <= 0 || document.form.date.value > 31) {
+  else if( document.form.date.value == "" || document.form.date.value <= 0 || document.form.date.value > 31) {
      alert(`Please enter a valid date that you were born in!`);
      document.form.day.focus() ;
      return false;
@@ -39,9 +39,8 @@ function weekdayValue() {
   YY = parseInt(year.substring(2,4));
   MM = parseInt(document.getElementById("month").value);
   DD = parseInt(document.getElementById("date").value);
-  d = ( ( (CC/4) -2*CC-1) + ( (5*YY/4) ) + ((26*(MM+1)/10) ) + DD) % 7;
-  console.log(d);
-  return (d.toFixed());
+  d = Math.floor(( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7);
+  return (Math.abs(d));
 }
 
 // function that returns either male/female in regard to the gender option checked
