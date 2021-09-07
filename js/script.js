@@ -39,9 +39,8 @@ function weekdayValue() {
   YY = parseInt(year.substring(2,4));
   MM = parseInt(document.getElementById("month").value);
   DD = parseInt(document.getElementById("date").value);
-  d = ( ( (CC/4) -2*CC-1) + ( (5*YY/4) ) + ((26*(MM+1)/10) ) + DD) % 7;
-  console.log(d);
-  return (d.toFixed());
+  d = Math.floor(( ( (CC/4) -2*CC-1) + ( (5*YY/4) ) + ((26*(MM+1)/10) ) + DD) % 7);
+  return (Math.abs(d));
 }
 
 // function that returns either male/female in regard to the gender option checked
