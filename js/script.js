@@ -5,8 +5,8 @@ var akanMaleNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw", "Kofi","Kwame"];
 var akanFemaleNames = ["Akosua","Adwoa","Abenaa","Akua"," Yaa","Afua","Ama"];
 
 //function to raise alert messages returning false on invalid input submission 
-function validate() {
-  var genders = document.getElementsByName("gender");
+function formValidate() {
+  var genderValue = document.getElementsByName("gender");
   if( document.form.year.value == "" || document.form.year.value.length !=4){
      alert(`Please enter a valid year of birth! eg 1990`);
      document.form.year.focus() ;
@@ -22,7 +22,7 @@ function validate() {
      document.form.day.focus() ;
      return false;
   }
-  else if( genders[0].checked == false && genders[1].checked == false ) {
+  else if( genderValue[0].checked == false && genderValue[1].checked == false ) {
       alert(`You must select gender. Male or Female`);
       return false;
   }   
@@ -45,11 +45,11 @@ function weekdayValue() {
 
 // function that returns either male/female in regard to the gender option checked
 function getGender() {
-  var genders = document.getElementsByName("gender");
-  if(genders[0].checked == true){
+  var genderValue = document.getElementsByName("gender");
+  if(genderValue[0].checked == true){
     var gender = "male";
   }
-  else if(genders[1].checked == true){
+  else if(genderValue[1].checked == true){
     var gender = "female";
   }
   else{
@@ -69,7 +69,7 @@ function getGender() {
 }
 
 function findOut() {
-  validate();
+  formValidate();
   dayOfWeek = weekdayValue();
   getGender();
   form.reset();
