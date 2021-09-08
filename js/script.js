@@ -7,7 +7,7 @@ var akanFemaleNames = ["Akosua","Adwoa","Abenaa","Akua"," Yaa","Afua","Ama"];
 //function to raise alert messages returning false on invalid input submission 
 function validate() {
   var genders = document.getElementsByName("gender");
-  if( document.form.year.value == "" || document.form.year.value.length !=4 || document.form.year.value <= 1900 || document.form.year.value > 2100) {
+  if( document.form.year.value == "" || document.form.year.value.length !=4){
      alert(`Please enter a valid year of birth! eg 1990`);
      document.form.year.focus() ;
      return false;
