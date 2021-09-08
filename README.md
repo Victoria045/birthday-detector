@@ -45,7 +45,7 @@ The program compares the inputs entered with the conditions set for the inputs e
 The True value is outputted. Example: **You were born on Tuesday. And Your Akan name is Kwadwo!** If gender is Male.<br/><br/>
 The True value is outputted. Example: **You were born on Tuesday and Your akan name is  Adwoa!** If gender is female.  
 
-**Example**
+**Input Example**
 * century input - 19
 * year input - 90
 * month input - 08
@@ -54,7 +54,7 @@ The True value is outputted. Example: **You were born on Tuesday and Your akan n
 **Expected output: *You were born on Tuesday. And Your Akan name is Abenaa!*** 
 
 ## Known Bugs
-* Some of the output are not entirely as accurate as expected.
+* The application is not entirely as accurate as expected.
 
 ## Support and contact details
 Incase of any issues at hand, please email me at v@gmail.com
