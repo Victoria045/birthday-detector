@@ -9,17 +9,17 @@ function formValidate() {
   var genderValue = document.getElementsByName("gender");
   if( document.form.year.value == "" || document.form.year.value.length !=4){
      alert(`Please enter a valid year of birth! eg 1990`);
-     document.form.year.focus() ;
+     document.form.year.focus();
      return false;
   }
   else if( document.form.month.value == "" || document.form.month.value <= 0 || document.form.month.value > 12){
      alert(`Please enter your month of birth! between 1 and 12`);
-     document.form.month.focus() ;
+     document.form.month.focus();
      return false;
   }
   else if( document.form.date.value == "" || document.form.date.value <= 0 || document.form.date.value > 31) {
      alert(`Please enter a valid date that you were born in!`);
-     document.form.day.focus() ;
+     document.form.day.focus();
      return false;
   }
   else if( genderValue[0].checked == false && genderValue[1].checked == false ) {
