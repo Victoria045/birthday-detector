@@ -39,7 +39,9 @@ function weekdayValue() {
   YY = parseInt(year.substring(2,4));
   MM = parseInt(document.getElementById("month").value);
   DD = parseInt(document.getElementById("date").value);
-  d = Math.floor(( ( (CC/4) -2*CC-1) + ( (5*YY/4) ) + ((26*(MM+1)/10) ) + DD) % 7);
+  console.log(CC,YY,MM,DD)
+  d =  ( ( Math.floor(CC/4) -(2*CC)-1) + ( Math.floor((5*YY)/4) ) + (Math.floor((26*(MM+1))/10) ) + DD ) % 7;
+  console.log(d);
   return (Math.abs(d));
 }
 
@@ -63,7 +65,7 @@ function getGender() {
     case "female":
         alert(`You were born on ${weekdays[dayOfWeek]}. And your Akan name is ${akanFemaleNames[dayOfWeek]}!`);
      
-    break
+    break;
     default:
     }
 }

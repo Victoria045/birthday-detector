@@ -42,8 +42,8 @@ The program compares the inputs entered with the conditions set for the inputs e
 * 0 < Date >= 31, Date falls between 0-31 else false.
 * 0 < Month >= 12, Month falls between 0-12 else false.
 * Gender Male or Female, cannot be empty. <br/>  
-The True value is outputted. Example: **You were born on Tuesday. And Your Akan name is Kwadwo!** If gender is Male.<br/><br/>
-The True value is outputted. Example: **You were born on Tuesday and Your akan name is  Adwoa!** If gender is female.  
+The True value is outputted. Example: **You were born on Monday. And Your Akan name is Kwadwo!** If gender is Male.<br/><br/>
+The True value is outputted. Example: **You were born on Monday and Your akan name is  Adwoa!** If gender is female.  
 
 **Input Example**
 * century input - 19
@@ -51,7 +51,7 @@ The True value is outputted. Example: **You were born on Tuesday and Your akan n
 * month input - 08
 * date input - 20
 * gender - female selected.
-**Expected output: *You were born on Tuesday. And Your Akan name is Abenaa!*** 
+**Expected output: *You were born on Monday. And Your Akan name is Adwoa!*** 
 
 ## Known Bugs
 * The application is not entirely as accurate as expected.
